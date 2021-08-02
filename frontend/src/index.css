@@ -1,0 +1,19 @@
+main {
+ min-height: 80vh;
+}
+
+/* Top logo */
+.logo {
+ max-height: 50px;
+ width: 100%;
+ border: 2px solid transparent;
+ border-radius: 12px;
+}
+
+h3 {
+ padding: 1rem 0;
+}
+
+.rating span {
+ margin: 0rem;
+}
