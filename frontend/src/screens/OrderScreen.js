@@ -20,6 +20,7 @@ const OrderScreen = ({ match }) => {
 
  const orderDetails = useSelector((state) => state.orderDetails);
  const { order, loading, error } = orderDetails;
+
  if (!loading) {
   //  Calculate prices
   const addDecimals = (num) => {
@@ -27,7 +28,7 @@ const OrderScreen = ({ match }) => {
   };
 
   order.itemsPrice = addDecimals(
-   order.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
+   order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   );
  }
 
@@ -41,7 +42,7 @@ const OrderScreen = ({ match }) => {
   <Message variant='danger'>{error}</Message>
  ) : (
   <>
-   <h1>Order {order._id}</h1>
+   <h1>ORDER : {order._id}</h1>
    <Row>
     <Col md={8}>
      <ListGroup variant='flush'>
@@ -81,11 +82,11 @@ const OrderScreen = ({ match }) => {
 
       <ListGroupItem>
        <h2>ORDER ITEMS</h2>
-       {order.order.Items.length === 0 ? (
+       {order.orderItems.length === 0 ? (
         <Message>Order is empty</Message>
        ) : (
         <ListGroup variant='flush'>
-         {order.order.Items.map((item, index) => (
+         {order.orderItems.map((item, index) => (
           <ListGroupItem key={index}>
            <Row>
             <Col md={1}>

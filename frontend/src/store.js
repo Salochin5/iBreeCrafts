@@ -16,7 +16,6 @@ import {
  orderCreateReducer,
  orderDetailsReducer,
 } from "./reducers/orderReducers";
-import { ORDER_DETAILS_FAIL } from "./constants/orderConstants";
 
 const reducer = combineReducers({
  productList: productListReducer,
@@ -27,7 +26,7 @@ const reducer = combineReducers({
  userDetails: userDetailsReducer,
  userUpdateProfile: userUpdateProfileReducer,
  orderCreate: orderCreateReducer,
- orderDetails: ORDER_DETAILS_FAIL,
+ orderDetails: orderDetailsReducer,
 });
 
 const cartItemsFromStorage = localStorage.getItem("cartItems")
