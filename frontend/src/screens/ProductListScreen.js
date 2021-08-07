@@ -43,7 +43,7 @@ const ProductListScreen = ({ history, match }) => {
   }
 
   if (successCreate) {
-   history.push(`/admin/product/${createProduct._id}/edit`);
+   history.push(`/admin/product/${createdProduct._id}/edit`);
   } else {
    dispatch(listProducts());
   }
@@ -59,6 +59,7 @@ const ProductListScreen = ({ history, match }) => {
  const deleteHandler = (id) => {
   if (window.confirm("Are you sure to Delete User")) {
    dispatch(deleteProduct(id));
+   dispatch(listProducts());
   }
  };
 
@@ -74,7 +75,7 @@ const ProductListScreen = ({ history, match }) => {
     </Col>
     <Col className='text-right'>
      <Button className='my-3' onClick={createProductHandler}>
-      <i className='fas fa-plus'></i> CREATE A PRODUCT
+      CREATE A PRODUCT <i className='fas fa-plus'></i>
      </Button>
     </Col>
    </Row>
