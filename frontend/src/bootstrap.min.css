@@ -3323,13 +3323,13 @@ fieldset:disabled .btn {
  background-color: transparent;
 }
 .btn-outline-warning {
- color: #ffc107;
- border-color: #ffc107;
+ color: #cc8400;
+ border-color: #cc8400;
 }
 .btn-outline-warning:hover {
  color: #fff;
- background-color: #ffc107;
- border-color: #ffc107;
+ background-color: #b37400;
+ border-color: #b37400;
 }
 .btn-check:focus + .btn-outline-warning,
 .btn-outline-warning:focus {
@@ -3341,8 +3341,8 @@ fieldset:disabled .btn {
 .btn-outline-warning.dropdown-toggle.show,
 .btn-outline-warning:active {
  color: #fff;
- background-color: #ffc107;
- border-color: #ffc107;
+ background-color: #cc8400;
+ border-color: #cc8400;
 }
 .btn-check:active + .btn-outline-warning:focus,
 .btn-check:checked + .btn-outline-warning:focus,
@@ -3354,7 +3354,7 @@ fieldset:disabled .btn {
 }
 .btn-outline-warning.disabled,
 .btn-outline-warning:disabled {
- color: #ffc107;
+ color: #cc8400;
  background-color: transparent;
 }
 .btn-outline-danger {
