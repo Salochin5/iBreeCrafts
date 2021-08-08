@@ -78,6 +78,7 @@ const CartScreen = ({ match, location, history }) => {
           <Button
            type='button'
            variant='light'
+           className='my-2'
            onClick={() => removeFromCartHandler(item.product)}
           >
            <i className='fas fa-trash'></i>
@@ -104,7 +105,7 @@ const CartScreen = ({ match, location, history }) => {
       <ListGroupItem>
        <Button
         type='button'
-        className='btn btn-block'
+        className='btn btn-block my-2'
         disabled={cartItems.length === 0}
         onClick={checkoutHandler}
        >

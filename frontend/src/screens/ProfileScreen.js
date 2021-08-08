@@ -100,7 +100,7 @@ const ProfileScreen = ({ location, history }) => {
       ></Form.Control>
      </Form.Group>
 
-     <Button type='submit' variant='primary'>
+     <Button type='submit' variant='primary' className='my-2'>
       Update
      </Button>
     </Form>
@@ -145,7 +145,7 @@ const ProfileScreen = ({ location, history }) => {
          </td>
          <td>
           <LinkContainer to={`/order/${order._id}`}>
-           <Button className='btn-sm' variant='light'>
+           <Button className='btn-sm my-2' variant='light'>
             Details
            </Button>
           </LinkContainer>

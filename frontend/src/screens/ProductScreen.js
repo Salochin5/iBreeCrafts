@@ -138,7 +138,7 @@ const ProductScreen = ({ history, match }) => {
          <ListGroupItem>
           <Button
            onClick={addToCartHandler}
-           className='btn-block'
+           className='btn-block my-2'
            type='button'
            disabled={product.countInStock === 0}
           >
@@ -193,7 +193,7 @@ const ProductScreen = ({ history, match }) => {
              onChange={(e) => setComment(e.target.value)}
             ></FormControl>
            </FormGroup>
-           <Button type='submit' variant='primary'>
+           <Button type='submit' variant='primary' className='my-2'>
             Submit
            </Button>
           </Form>
