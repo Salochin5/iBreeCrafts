@@ -112,6 +112,7 @@ h2 {
  max-height: 550px;
  margin: 40px;
  margin-left: 10%;
+ width: 50%;
 }
 
 @media only screen and (max-width: 766px) {
