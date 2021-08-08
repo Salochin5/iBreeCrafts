@@ -27,3 +27,64 @@ h2 {
 .rating span {
  margin: 0.1rem;
 }
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+ display: flex;
+}
+
+.carousel-caption {
+ position: absolute;
+ top: 0;
+}
+
+.carousel-caption h2 {
+ color: #cc8400;
+}
+@media only screen and (min-width: 991px) {
+ .carousel img {
+  max-height: 50vh;
+  min-width: 75%;
+  margin-top: 85px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  padding-left: 15%;
+ }
+}
+
+@media only screen and (max-width: 766px) {
+ .carousel img {
+  margin: 80px 10px 3% 10px;
+  max-width: 95%;
+ }
+ .carousel-caption h2 {
+  font-style: italic;
+  font-size: 15px;
+ }
+}
+
+@media only screen and (min-width: 767px) {
+ .carousel img {
+  margin: 80px 10px 3% 25px;
+  max-width: 96%;
+ }
+ .carousel-caption h2 {
+  font-style: italic;
+ }
+}
+
+/* 
+.carousel img {
+ max-height: 600px;
+ padding: 30px;
+ margin: 40px;
+ border-radius: 50%;
+ } */
+
+.carousel a {
+ margin: 0 auto;
+}
+
+/* .carousel-control-prev */
